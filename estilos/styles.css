@@ -3,3 +3,69 @@
     padding: 0;
 }
 
+
+/*  SECTOR DE ETIQUETAS */
+header{
+    background-color: rgba(205, 172, 246, 1);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-bottom: 2em;
+    height: 100px;
+}
+
+header nav div p{
+    color: rgba(250, 255, 0, 1);
+    font-size: xx-large;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: rgba(217, 217, 217, 1);
+    width: 90%;
+    margin: auto;
+    padding: 2%;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  SECTOR DE CLASES    */
+
+.titulo{
+    text-align: center;
+    font-size: 35px;
+    margin: 10px 0px;
+    padding: 20px 10px 10px 10px;
+}
+
+.subtitulo{
+    text-align: start;
+    font-size: 25px;
+    margin: 5px 0;
+    padding: 10px 5px 5px 5px;
+}
+
+/*  SECTOR DE ID    */

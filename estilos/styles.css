@@ -18,6 +18,14 @@ header nav div p{
     font-size: xx-large;
 }
 
+li{
+    list-style: none;
+}
+
+aside ul li:hover{
+    background-color: rgba(205, 172, 246, 1);
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -34,6 +42,7 @@ a:hover{
 main{
     width: 90%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 section{
@@ -48,9 +57,18 @@ aside{
 }
 
 
+footer{
+    background-color: rgba(205, 172, 246, 1);
+}
 
+footer div div ul li{
+    font-size: 14px;
+}
 
-
+footer div div img{
+    width: 80px;
+    height: 80px;
+}
 
 
 
@@ -75,9 +93,26 @@ aside{
     padding: 10px 5px 5px 5px;
 }
 
+.descripcion{
+    text-align: center;
+    font-size: 14px;
+    margin: 15px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
 /*  SECTOR DE ID    */
 
 #imgtext{
     width: 250px;
     height: 210px;
+}
+
+#formulario{
+    margin-bottom: 20px;
 }

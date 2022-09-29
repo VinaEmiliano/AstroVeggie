@@ -10,12 +10,20 @@ header{
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     margin-bottom: 2em;
-/*     position: fixed; */
     height: 80px;
+/*     position: fixed; */
 /*     width: 100%; */
 /*     top: 0; */
-
 }
+
+/* nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 30px;
+    padding: 10px 5px;
+}
+ */
 
 header nav div p{
     color: rgba(250, 255, 0, 1);
@@ -49,6 +57,7 @@ main{
     margin: auto;
     margin-bottom: 20px;
 /*     margin-top: 110px; */
+/*     display: flex; */
 }
 
 section{
@@ -99,6 +108,12 @@ footer div div img{
 
 
 /*  SECTOR DE CLASES    */
+
+/* .lista--navegacion{
+    display: flex;
+    margin: 0px 5px;
+    align-items: center;
+} */
 
 .titulo{
     text-align: center;
@@ -155,4 +170,10 @@ footer div div img{
     padding: 5px;
     text-decoration: none;
     font-size: larger;
+    margin: 20px 0px 0px 0px;
+    width: fit-content;
 }
+
+/* #navegacion{
+    display: flex;
+} */

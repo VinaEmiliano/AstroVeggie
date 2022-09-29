@@ -10,7 +10,11 @@ header{
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     margin-bottom: 2em;
-    height: 100px;
+/*     position: fixed; */
+    height: 80px;
+/*     width: 100%; */
+/*     top: 0; */
+
 }
 
 header nav div p{
@@ -20,10 +24,6 @@ header nav div p{
 
 li{
     list-style: none;
-}
-
-aside ul li:hover{
-    background-color: rgba(205, 172, 246, 1);
 }
 
 a{
@@ -39,10 +39,16 @@ a:hover{
     text-decoration: underline;
 }
 
+iframe{
+    width: 50%;
+    max-width: 500px;
+}
+
 main{
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
+/*     margin-top: 110px; */
 }
 
 section{
@@ -54,6 +60,21 @@ aside{
     background-color: rgba(217, 217, 217, 1);
     height: fit-content;
     margin: 4px 4px;
+    padding: 5px;
+}
+
+aside ul li:hover{
+    background-color: rgba(205, 172, 246, 1);
+}
+
+form fieldset{
+    border-radius: 10px;
+    background-color: rgba(205, 172, 246, 1);
+    padding: 5px;
+}
+
+form fieldset h4{
+    margin: 10px 0px 5px 0px;
 }
 
 
@@ -100,6 +121,10 @@ footer div div img{
     padding: 10px;
 }
 
+.productoimg, .recetaimg{
+    height: 250px;
+    width: 250px;
+}
 
 
 
@@ -115,4 +140,19 @@ footer div div img{
 
 #formulario{
     margin-bottom: 20px;
+}
+
+#proximoseventos, #eventosanteriores{
+    background-color: rgba(205, 172, 246, 1);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 40px 20px;
+}
+
+#comeback{
+    border-radius: 5px;
+    background-color: rgba(205, 172, 246, 1);
+    padding: 5px;
+    text-decoration: none;
+    font-size: larger;
 }

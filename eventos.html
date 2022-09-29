@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./estilos/styles.css">
 </head>
 <body>
-    <header>
+    <header id="comienzo">
         <nav>
             <div>
                 <p>Astro Veggie</p>
@@ -28,7 +28,7 @@
     <main>
         <section>
             <h1 class="titulo">Eventos</h1>
-            <article>
+            <article id="proximoseventos">
                 <h2 class="subtitulo">Proximos eventos</h2>
                 <div>
                     <ul>
@@ -37,26 +37,30 @@
                     </ul>
                 </div>
             </article>
-            <article>
+            <article id="eventosanteriores">
                 <h2 class="subtitulo">Eventos anteriores</h2>
                 <div>
                     <ul>
-                        <li id="boda-vegana"><iframe width="560" height="315" src="https://www.youtube.com/embed/xwqXxxqhhl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p class="descripcion">Boda vegana Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum eveniet quo voluptatibus exercitationem. Optio, sed. Nisi facere consequuntur corrupti deserunt?</p></li>
+                        <li id="boda-vegana"><iframe width="560" height="315" src="https://www.youtube.com/embed/SdtDZ3nCCZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p class="descripcion">Boda vegana Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum eveniet quo voluptatibus exercitationem. Optio, sed. Nisi facere consequuntur corrupti deserunt?</p></li>
                         <li id="feria-saludable"><iframe width="560" height="315" src="https://www.youtube.com/embed/PQD6jsu2204" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p class="descripcion">Feria vegana de Yucatan Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis earum quasi odio amet, laudantium sed rerum facilis ad exercitationem reprehenderit?</p></li>
                         <li><iframe width="560" height="315" src="https://www.youtube.com/embed/_cPOpvrwqe4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p class="descripcion">Curso de comida vegana Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam beatae aliquam aperiam fugiat voluptatum numquam earum velit deserunt non nobis!</p></li>
                     </ul>
                 </div>
             </article>
         </section>
+        <section>
+            <div>
+                <a href="#comienzo" id="comeback">Inicio</a>
+            </div>
+        </section>
         <aside>
-                <p>Novedades</p>
+                <p class="subtitulo">Novedades</p>
                 <ul>
                     <li><a href="#siguiente-evento">Evento del proximo mes</a></li>
                     <li><a href="#feria-saludable">Feria de comida saluble</a></li>
                     <li><a href="#boda-vegana">Gran boda vegana</a></li>
                 </ul>
         </aside>
-        </section>
     </main>
     <footer>
         <div>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./estilos/styles.css">
 </head>
 <body>
-    <header>
+    <header id="comienzo">
         <nav>
             <div>
                 <p>Astro Veggie</p>
@@ -32,12 +32,13 @@
                 <form action="">
                     <fieldset>                           
                         <legend>Ponte en contacto con nosotros</legend>
+                        <h4>Mis datos</h4>
                         <label for="nombre">Nombre</label>
                         <input type="text" name="nombre" id="">
                         <label for="e-mail">e-mail</label>
                         <input type="text" name="e-mail" id="">
         
-                        <h3>Quiero conocer</h3>
+                        <h4>Quiero conocer</h3>
                         <label for="productype">Productos vegetarianos</label>
                         <input type="radio" name="productype" id="">
                         <label for="productype">Productos veganos</label>
@@ -45,14 +46,14 @@
                         <label for="productype">Productos aptos para celiacos</label>
                         <input type="radio" name="productype" id="">
                     
-                        <h3>Como conociste Astro Veggie?</h3>
+                        <h4>Como conociste Astro Veggie?</h3>
                         <select name="difusion" id="">
                             <option value="redes">Redes sociales</option>
                             <option value="amigos">Amigos</option>
                             <option value="eventos">Eventos publicos</option>
                         </select>
         
-                        <h3>Me encantaria recibir informacion sobre proximos eventos</h3>
+                        <h4>Me encantaria recibir informacion sobre proximos eventos</h3>
                         <input type="checkbox" name="aceptar" value="verdadero">
         
                         <input type="submit" value="Enviar">
@@ -62,15 +63,18 @@
                 </form>
             </div>
         </section>
-        <section>
-            <aside>
-                <p>Novedades</p>
+        <aside>
+                <p class="subtitulo">Novedades</p>
                 <ul>
-                    <li><a href="https://youtu.be/rp3oGdumyjM" target="_blank">Evento del proximo mes</a></li>
-                    <li><a href="https://youtu.be/PQD6jsu2204" target="_blank">Feria de comida saludable</a></li>
-                    <li><a href="https://youtu.be/xwqXxxqhhl0" target="_blank">Gran boda vegana</a></li>
+                    <li><a href="./eventos.html#siguiente-evento">Evento del proximo mes</a></li>
+                    <li><a href="./eventos.html#feria-saludable">Feria de comida saludable</a></li>
+                    <li><a href="./eventos.html#boda-vegana">Gran boda vegana</a></li>
                 </ul>
-            </aside>
+        </aside>
+        <section>
+            <div>
+                <a href="#comienzo" id="comeback">Inicio</a>
+            </div>
         </section>
     </main>
     <footer>

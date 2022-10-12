@@ -49,10 +49,6 @@ a:visited{
     color: black;
 }
 
-a:hover{
-    text-decoration: underline;
-}
-
 iframe{
     width: 80%;
     max-width: 500px;
@@ -101,15 +97,28 @@ aside ul{
 }
 
 aside ul li{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 2%;
     background-color: rgba(205, 172, 246, 1);
     border-radius: 5px;
-    padding: 20px;
-    width: 80%;
-    text-align: center;
+    width: 95%;
+    height: 25%;
+}
+
+aside ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 aside ul li a:hover{
     text-decoration: none;
+    color: white;
 }
 
 aside ul li:hover{
@@ -136,7 +145,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1%;
+    padding: 1% 0px;
     flex-wrap: wrap;
     height: fit-content;
 }
@@ -183,9 +192,46 @@ text-align: center;
     width: 250px;
 }
 
+.productos__listado__imagenes{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.productos__listado__descripcion{
+    width: 180px;
+}
+
+.lista__indice{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lista__indice li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
+.lista__indice li a{
+    background-color: rgba(205, 172, 246, 1);
+    border-radius: 5px;
+    padding: 20px;
+    height: fit-content;
+    width: 120px;
+}
 
+.lista__indice li a:hover{
+    background-color: rgb(177, 124, 241);
+    color: white;
+}
+
+.receta__indice__medida{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
 
 
 /*  SECTOR DE ID    */
@@ -212,14 +258,43 @@ text-align: center;
     margin: 40px 20px;
 }
 
-#comeback{
+#boton__inicio{
+    margin: 20px 0px 10px 0px;
+}
+
+#boton__inicio__estilo{
     border-radius: 5px;
     background-color: rgba(205, 172, 246, 1);
     padding: 5px;
-    text-decoration: none;
     font-size: larger;
     margin: 20px 0px 0px 0px;
     width: fit-content;
+}
+
+#boton__inicio__estilo:hover{
+    background-color: rgb(177, 124, 241);
+    color: white;
+}
+
+#productos__listado__grilla{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#productos__listado__grilla li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(205, 172, 246, 1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#productos__listado__grilla li:hover{
+    background-color: rgb(177, 124, 241);
+    color: white;
 }
 
 #input__formulario__checkbox{
@@ -229,7 +304,7 @@ text-align: center;
 
 /* SECTOR RESPONSIVE */
 
-#grilla__inicio{
+#grilla__inicio, #grilla__productos, #grilla__recetas, #grilla__eventos, #grilla__contacto{
     height: 100vh;
     display: grid;
     grid-template-areas: 
@@ -241,9 +316,8 @@ text-align: center;
     grid-template-rows: 2fr repeat(2, 4fr) 120px;
 }
 
-
 @media (max-width: 320px){
-    #grilla__inicio{
+    #grilla__inicio, #grilla__productos, #grilla__recetas, #grilla__eventos, #grilla__contacto{
         height: 100vh;
         display: grid;
         grid-template-areas: 
@@ -255,41 +329,42 @@ text-align: center;
         grid-template-rows: 2fr repeat(2, 4fr) 120px;
     }
     aside{
-            flex-direction: column;
-            padding: 0px 0px 20px 0px;
-            margin: 0px auto 20px auto;
-            height: auto;
-            width: 80%;
-            position: relative;
-        }
+        flex-direction: column;
+        padding: 0px 0px 20px 0px;
+        margin: 0px auto 20px auto;
+        height: auto;
+        width: 80%;
+        position: relative;
+    }
     aside ul li{
-            background-color: rgba(205, 172, 246, 1);
-            border-radius: 5px;
-            padding: 20px;
-            width: 80%;
-            text-align: center;
-            margin: 10px 0px;
-        }
-        #inicio__articulo__uno{
-            flex-direction: column;
-            align-items: center;
-        }
-        footer{
-            flex-direction: column;
-        }
-        header{
-            height: fit-content;
-        }
-        nav{
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        nav ul{
-            flex-direction: column;
-        }
-        #imgtext{
-            width: 70%;
-            height: 70%;
-        }
+        background-color: rgba(205, 172, 246, 1);
+        border-radius: 5px;
+        padding: 20px;
+        width: 80%;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    header{
+        height: fit-content;
+    }
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    #imgtext{
+        width: 70%;
+        height: 70%;
+    }
+    #inicio__articulo__uno{
+        flex-direction: column;
+        align-items: center;
+    }
 }

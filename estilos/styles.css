@@ -65,6 +65,10 @@ iframe{
     max-width: 500px;
 }
 
+i{
+    margin: 0px 5px;
+}
+
 main{
     width: 90%;
     margin: auto;
@@ -161,11 +165,27 @@ footer{
     height: fit-content;
 }
 
-footer div ul li{
-margin: 3px 0px;
-text-align: center;
+footer div{
+    padding: 15px;
 }
 
+footer div ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer div ul li a{
+    padding: 3px;
+}
+
+footer div ul li a:hover{
+    background-color: rgb(177, 124, 241);
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
 
 
 
@@ -216,6 +236,7 @@ text-align: center;
 .lista__indice{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .lista__indice li{

@@ -10,4 +10,3 @@ Para una siguiente entrega, se incluira flexbox en:
 la barra de navegacion
 el cuerpo de la pagina (para lograr que el aside se posicione al lado derecho del contenido principal y de la pantalla )
 el footer, par crear columnas
-

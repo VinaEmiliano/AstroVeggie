@@ -5,25 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astro Veggie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./favicon/favicon.ico">
     <link rel="stylesheet" href="./estilos/styles.css">
     <script src="https://kit.fontawesome.com/5fbc450727.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="grilla__inicio">
         <header id="comienzo">
-            <nav>
-                <div>
-                    <p>Astro Veggie</p>
-                </div>
-                <div>
-                    <ul id="navegacion">
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./recetas.html">Recetas</a></li>
-                        <li><a href="./eventos.html">Eventos</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid mx-3 mb-3">
+                    <a class="navbar-brand" href="./index.html">Astro Veggie</a>
+                    <button class="navbar-toggler navbar-light bg-purple" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="./recetas.html">Recetas</a>
+                        <a class="nav-link" href="./eventos.html">Eventos</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -54,20 +62,21 @@
         <aside>
             <p class="subtitulo">Novedades</p>
             <ul>
-                <li><a href="./eventos.html#siguiente-evento"><p>Evento del proximo mes</p></a></li>
-                <li><a href="./eventos.html#feria-saludable"><p>Feria de comida saludable</p></a></li>
-                <li><a href="./eventos.html#boda-vegana"><p>Gran boda vegana</p></a></li>
+                <li><a href="./eventos.html#siguiente-evento">Evento del proximo mes</a></li>
+                <li><a href="./eventos.html#feria-saludable">Feria de comida saludable</a></li>
+                <li><a href="./eventos.html#boda-vegana">Gran boda vegana</a></li>
             </ul>
         </aside>
         <footer>
-            <div>
-                <p>Gracias por visitarnos !!</p>
+            <div class="footer__animacion">
+                <p class="footer__animacion__texto">Gracias por</p>
+                <p class="footer__animacion__texto">tu visita !!</p>
             </div>
             <div>
                 <ul>
-                    <li><a href=""><i class="fa-brands fa-facebook"></i><p>Facebook</p></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram"></i><p>Instagram</p></a></li>
-                    <li><a href=""><i class="fa-brands fa-pinterest"></i><p>Pinterest</p></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li><a href=""><i class="fa-brands fa-pinterest"></i>Pinterest</a></li>
                 </ul>
             </div>
             <div>

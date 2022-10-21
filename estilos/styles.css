@@ -242,7 +242,7 @@ footer div ul li a:hover{
 
 .lista__indice{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -303,6 +303,10 @@ footer div ul li a:hover{
     margin: 10px 0px    ;
 }
 
+.evento__video{
+    margin: 0px;
+    padding: 0px;
+}
 .evento__video li{
     background-color: rgba(205, 172, 246, 1);
     border-radius: 10px;
@@ -310,6 +314,10 @@ footer div ul li a:hover{
     height: fit-content;
     width: 80%;
     margin: 20px auto;
+}
+
+.formulario__area{
+    font-size: small;
 }
 
 .evento__video li:hover{
@@ -493,10 +501,6 @@ footer div ul li a:hover{
     }
     .productos__size{
         padding: 15px 0px;
-    }
-    .evento__video{
-        margin: 0px;
-        padding: 0px;
     }
     .evento__video li{
         width: 90%;

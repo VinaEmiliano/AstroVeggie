@@ -203,6 +203,7 @@ footer div ul li a:hover{
 /* TITULOS */
 
 .titulo{
+    font-family: pacifico, cursive;
     text-align: center;
     font-size: 35px;
     margin: 10px 0px;
@@ -210,6 +211,7 @@ footer div ul li a:hover{
 }
 
 .subtitulo{
+    font-family: pacifico, cursive;
     text-align: center;
     font-size: 25px;
     margin: 10px 0px;

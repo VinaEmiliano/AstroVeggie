@@ -3,9 +3,11 @@
     padding: 0;
 }
 
+@import"extras";
+
 /*  SECTOR DE ETIQUETAS */
 header{
-    background-color: rgba(205, 172, 246, 1);
+    background-color: $color-1-grupo-1;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     margin-bottom: 30px;
@@ -20,12 +22,12 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: $color-2-grupo-2;
+    &:visited{
+        color: $color-2-grupo-2;
+    }
 }
 
-a:visited{
-    color: black;
-}
 
 iframe{
     width: 80%;
@@ -43,7 +45,7 @@ main{
 }
 
 section{
-    background-color: rgba(217, 217, 217, 1);
+    background-color: $color-2-grupo-1;
     padding: 15px;
     border-radius: 20px;
     grid-area: section;
@@ -58,7 +60,7 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(217, 217, 217, 1);
+    background-color: $color-2-grupo-1;
     height: 54%;
     width: 22%;
     margin: 123px 3% 0px 0px;
@@ -67,62 +69,56 @@ aside{
     right: 0%;
     border-radius: 20px;
     grid-area: aside;
-}
-
-aside ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-
-}
-
-aside ul li{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 5%;
-    background-color: rgba(205, 172, 246, 1);
-    border-radius: 5px;
-    width: 95%;
-    height: 25%;
-}
-
-aside ul li a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-aside ul li a:hover{
-    text-decoration: none;
-    color: white;
-}
-
-aside ul li:hover{
-    background-color: rgb(177, 124, 241);
-
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        li{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: 5%;
+            background-color: $color-1-grupo-1;
+            border-radius: 5px;
+            width: 95%;
+            height: 25%;
+            &:hover{
+                background-color: $color-1-grupo-3;
+                
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                &:hover{
+                    text-decoration: none;
+                    color: $color-1-grupo-2;
+                }
+            }
+        }
+    }
 }
 
 form fieldset{
     border-radius: 10px;
-    background-color: rgba(205, 172, 246, 1);
+    background-color: $color-1-grupo-1;
     padding: 5px;
+    h4{
+        margin: 20px 0px 5px 0px;
+    }
 }
 
-form fieldset h4{
-    margin: 20px 0px 5px 0px;
-}
 
 footer{
-    background-color: rgba(205, 172, 246, 1);
+    background-color: $color-1-grupo-1;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     grid-area: footer;
@@ -132,54 +128,42 @@ footer{
     padding: 1% 0px 0px 0px;
     flex-wrap: wrap;
     height: fit-content;
+    div{
+        padding: 15px 0px;
+        ul{
+            margin: 0px;
+            padding: 0px;
+            max-width: 171px;
+            li{
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 3px;
+                    &:hover{
+                        background-color: $color-1-grupo-3;
+                        color: $color-1-grupo-2;
+                        border-radius: 5px;
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
 }
-
-footer div{
-    padding: 15px 0px;
-}
-
-footer div ul{
-    margin: 0px;
-    padding: 0px;
-    max-width: 171px;
-}
-
-footer div ul li a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3px;
-}
-
-
-footer div ul li a:hover{
-    background-color: rgb(177, 124, 241);
-    color: white;
-    border-radius: 5px;
-    padding: 3px;
-}
-
-
-
-
-
-
-
-
 
 /*  SECTOR DE CLASES    */
 
 /* NAVEGACION */
 
 .navbar-brand{
-    color: rgba(250, 255, 0, 1);
+    color: $color-2-grupo-3;
     font-size: 33px;
-}
-
-.navbar-brand:visited{
-    color: rgba(250, 255, 0, 1);
-    font-size: 35px;
+    &:visited{
+        color: $color-2-grupo-3;
+        font-size: 35px;
+    }
 }
 
 .navbar-nav{
@@ -190,13 +174,13 @@ footer div ul li a:hover{
     padding: 2px 8px;
     text-align: center;
     width: 30%;
+    &:hover{
+        background-color: $color-1-grupo-3;
+        color: $color-1-grupo-2;
+        border-radius: 5px;
+    }
 }
 
-.nav-link:hover{
-    background-color: rgb(177, 124, 241);
-    color: white;
-    border-radius: 5px;
-}
 
 /* TITULOS */
 
@@ -248,32 +232,28 @@ footer div ul li a:hover{
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
-}
-
-.lista__indice li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20%;
-}
-
-
-.lista__indice li a{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(205, 172, 246, 1);
-    border-radius: 5px;
-    padding: 20%;
-    height: fit-content;
-    width: 100%;
-    text-align: center;
-}
-
-.lista__indice li a:hover{
-    background-color: rgb(177, 124, 241);
-    color: white;
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        a{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-1-grupo-1;
+            border-radius: 5px;
+            padding: 20%;
+            height: fit-content;
+            width: 100%;
+            text-align: center;
+            &:hover{
+                background-color: $color-1-grupo-3;
+                color: $color-1-grupo-2;
+            }
+        }
+    }
 }
 
 .receta__indice__medida{
@@ -283,17 +263,16 @@ footer div ul li a:hover{
 }
 
 .contenedor__guia{
-    background-color: rgba(205, 172, 246, 1);
+    background-color: $color-1-grupo-1;
     border-radius: 10px;
     padding: 20px;
     height: fit-content;
     width: 80%;
     margin: 15px auto;
-}
-
-.contenedor__guia:hover{
-    background-color: rgb(177, 124, 241);
-    color: white;
+    &:hover{
+        background-color: $color-1-grupo-3;
+        color: $color-1-grupo-2;
+    }
 }
 
 .recetaimg{
@@ -306,23 +285,22 @@ footer div ul li a:hover{
 .evento__video{
     margin: 0px;
     padding: 0px;
-}
-.evento__video li{
-    background-color: rgba(205, 172, 246, 1);
-    border-radius: 10px;
-    padding: 20px;
-    height: fit-content;
-    width: 80%;
-    margin: 20px auto;
+    li{
+        background-color: $color-1-grupo-1;
+        border-radius: 10px;
+        padding: 20px;
+        height: fit-content;
+        width: 80%;
+        margin: 20px auto;
+        &:hover{
+            background-color: $color-1-grupo-3;
+            color: $color-1-grupo-2;
+        }
+    }
 }
 
 .formulario__area{
     font-size: small;
-}
-
-.evento__video li:hover{
-    background-color: rgb(177, 124, 241);
-    color: white;
 }
 
 .footer__animacion__texto{
@@ -359,16 +337,15 @@ footer div ul li a:hover{
 
 #boton__inicio__estilo{
     border-radius: 5px;
-    background-color: rgba(205, 172, 246, 1);
+    background-color: $color-1-grupo-1;
     padding: 5px;
     font-size: larger;
     margin: 20px 0px 0px 0px;
     width: fit-content;
-}
-
-#boton__inicio__estilo:hover{
-    background-color: rgb(177, 124, 241);
-    color: white;
+    &:hover{
+        background-color: $color-1-grupo-3;
+        color: $color-1-grupo-2;
+    }
 }
 
 #productos__listado__grilla{
@@ -377,29 +354,25 @@ footer div ul li a:hover{
     justify-content: center;
     margin: 0px;
     padding: 0px;
-}
-
-#productos__listado__grilla li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    background-color: rgba(205, 172, 246, 1);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-#productos__listado__grilla li:hover{
-    background-color: rgb(177, 124, 241);
-    color: white;
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        background-color: $color-1-grupo-1;
+        border-radius: 10px;
+        padding: 20px;
+        &:hover{
+            background-color: $color-1-grupo-3;
+            color: $color-1-grupo-2;
+        }
+    }
 }
 
 #input__formulario__checkbox{
     display: block;
     margin: 5px auto;
 }
-
-
 
 /* ANIMACIONES */
 
@@ -465,22 +438,24 @@ footer div ul li a:hover{
         height: auto;
         width: 80%;
         position: relative;
-    }
-    aside ul li{
-        background-color: rgba(205, 172, 246, 1);
-        border-radius: 5px;
-        padding: 10px;
-        width: 80%;
-        text-align: center;
-        margin: 10px 0px;
+        ul{
+            li{
+                background-color: $color-1-grupo-1;
+                border-radius: 5px;
+                padding: 10px;
+                width: 80%;
+                text-align: center;
+                margin: 10px 0px;
+            }
+        }
     }
     nav{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-    }
-    nav ul{
-        flex-direction: column;
+        ul{
+            flex-direction: column;
+        }
     }
     footer{
         flex-direction: column;
@@ -502,14 +477,18 @@ footer div ul li a:hover{
     .productos__size{
         padding: 15px 0px;
     }
-    .evento__video li{
-        width: 90%;
-        margin: 20px auto;
-        padding: 10px;
+    .evento__video{
+        li{
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+        }
     }
-    .lista__indice li{
-        margin: 10px 0px;
-        width: 80%;
+    .lista__indice{
+        li{
+            margin: 10px 0px;
+            width: 80%;
+        }
     }
     .recetaimg,.productos__listado__imagenes{
         height: 100px;

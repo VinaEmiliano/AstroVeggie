@@ -9,8 +9,6 @@ header {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   margin-bottom: 30px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   grid-area: header;
 }
@@ -123,8 +121,6 @@ footer {
   align-items: center;
   padding: 1% 0px 0px 0px;
   flex-wrap: wrap;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
 }
 footer div {
@@ -239,8 +235,6 @@ footer div ul li a:hover {
   background-color: rgb(205, 172, 246);
   border-radius: 5px;
   padding: 20%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   text-align: center;
@@ -260,8 +254,6 @@ footer div ul li a:hover {
   background-color: rgb(205, 172, 246);
   border-radius: 10px;
   padding: 20px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   width: 80%;
   margin: 15px auto;
@@ -286,8 +278,6 @@ footer div ul li a:hover {
   background-color: rgb(205, 172, 246);
   border-radius: 10px;
   padding: 20px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   width: 80%;
   margin: 20px auto;
@@ -337,8 +327,6 @@ footer div ul li a:hover {
   padding: 5px;
   font-size: larger;
   margin: 20px 0px 0px 0px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 #boton__inicio__estilo:hover {
@@ -374,26 +362,7 @@ footer div ul li a:hover {
 
 /* ANIMACIONES */
 .footer__animacion {
-  -webkit-animation: visita 1.5s infinite;
-          animation: visita 1.5s infinite;
-}
-
-@-webkit-keyframes visita {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.4);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  75% {
-    transform: scale(1.4);
-  }
-  100% {
-    transform: scale(1);
-  }
+  animation: visita 1.5s infinite;
 }
 
 @keyframes visita {
@@ -425,8 +394,6 @@ footer div ul li a:hover {
 @media (max-width: 320px) {
   #grilla__inicio, #grilla__productos, #grilla__recetas, #grilla__eventos, #grilla__contacto {
     margin: auto;
-    width: -webkit-min-content;
-    width: -moz-min-content;
     width: min-content;
     height: 100vh;
     display: grid;
@@ -501,4 +468,6 @@ footer div ul li a:hover {
   .articulo__guia {
     margin: 0px;
   }
-}/*# sourceMappingURL=estilosass.css.map */
+}
+
+/*# sourceMappingURL=estilosass.css.map */

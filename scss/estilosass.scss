@@ -1,4 +1,5 @@
-@import"extras";
+@import"colores";
+@import"mixin";
 
 $steps:16px;
 
@@ -62,9 +63,8 @@ article{
 }
 
 aside{
-    display: flex;
+    @include display-flex(flex, center, center );
     flex-direction: column;
-    align-items: center;
     background-color: $color-2-grupo-1;
     height: 54%;
     width: 22%;
@@ -75,19 +75,15 @@ aside{
     border-radius: 20px;
     grid-area: aside;
     ul{
-        display: flex;
+        @include display-flex(flex, center, space-around);
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
         height: 100%;
         width: 100%;
         padding: 0px;
         margin: 0px;
         li{
-            display: flex;
+            @include display-flex(flex, center, center );
             text-align: center;
-            align-items: center;
-            justify-content: center;
             margin: 5%;
             background-color: $color-1-grupo-1;
             border-radius: 5px;
@@ -98,9 +94,7 @@ aside{
                 
             }
             a{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include display-flex(flex, center, center );
                 height: 100%;
                 width: 100%;
                 &:hover{
@@ -123,15 +117,13 @@ form fieldset{
 
 
 footer{
+    @include display-flex(flex, center, space-evenly );
+    flex-wrap: wrap;
     background-color: $color-1-grupo-1;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     grid-area: footer;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 1% 0px 0px 0px;
-    flex-wrap: wrap;
     height: fit-content;
     div{
         padding: 15px 0px;
@@ -141,9 +133,7 @@ footer{
             max-width: 171px;
             li{
                 a{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include display-flex(flex, center, center );
                     text-align: center;
                     padding: 3px;
                     &:hover{
@@ -230,23 +220,18 @@ footer{
 }
 
 .lista__indice{
-    display: flex;
+    @include display-flex(flex, center, space-evenly );
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
     li{
-        display: flex;
+        @include display-flex(flex, center, center );
         flex-direction: column;
-        align-items: center;
         width: 20%;
         a{
-            display: flex;
+            @include display-flex(flex, center, space-between );
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
             background-color: $color-1-grupo-1;
             border-radius: 5px;
             padding: 20%;
@@ -354,15 +339,13 @@ footer{
 }
 
 #productos__listado__grilla{
-    display: flex;
+    @include display-flex(flex, center, center );
     flex-wrap: wrap;
-    justify-content: center;
     margin: 0px;
     padding: 0px;
     li{
-        display: flex;
+        @include display-flex(flex, center, center );
         flex-direction: column;
-        align-items: center;
         margin: 10px;
         background-color: $color-1-grupo-1;
         border-radius: 10px;

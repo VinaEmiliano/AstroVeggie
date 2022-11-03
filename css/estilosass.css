@@ -54,8 +54,9 @@ article {
 
 aside {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: rgb(217, 217, 217);
   height: 54%;
   width: 22%;
@@ -68,9 +69,9 @@ aside {
 }
 aside ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   padding: 0px;
@@ -78,9 +79,9 @@ aside ul {
 }
 aside ul li {
   display: flex;
-  text-align: center;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 5%;
   background-color: rgb(205, 172, 246);
   border-radius: 5px;
@@ -112,15 +113,15 @@ form fieldset h4 {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   background-color: rgb(205, 172, 246);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   grid-area: footer;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   padding: 1% 0px 0px 0px;
-  flex-wrap: wrap;
   height: fit-content;
 }
 footer div {
@@ -133,8 +134,8 @@ footer div ul {
 }
 footer div ul li a {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 3px;
 }
@@ -214,24 +215,25 @@ footer div ul li a:hover {
 
 .lista__indice {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: row;
   flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
 }
 .lista__indice li {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 20%;
 }
 .lista__indice li a {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   background-color: rgb(205, 172, 246);
   border-radius: 5px;
   padding: 20%;
@@ -336,15 +338,17 @@ footer div ul li a:hover {
 
 #productos__listado__grilla {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
 }
 #productos__listado__grilla li {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 10px;
   background-color: rgb(205, 172, 246);
   border-radius: 10px;

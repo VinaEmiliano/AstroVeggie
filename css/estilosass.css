@@ -100,7 +100,7 @@ aside ul li a {
 }
 aside ul li a:hover {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
 
 form fieldset {
@@ -141,7 +141,7 @@ footer div ul li a {
 }
 footer div ul li a:hover {
   background-color: rgb(177, 124, 241);
-  color: white;
+  color: whitesmoke;
   border-radius: 5px;
   padding: 3px;
 }
@@ -168,7 +168,7 @@ footer div ul li a:hover {
 }
 .nav-link:hover {
   background-color: rgb(177, 124, 241);
-  color: white;
+  color: whitesmoke;
   border-radius: 5px;
 }
 
@@ -243,7 +243,7 @@ footer div ul li a:hover {
 }
 .lista__indice li a:hover {
   background-color: rgb(177, 124, 241);
-  color: white;
+  color: whitesmoke;
 }
 
 .receta__indice__medida {
@@ -262,7 +262,7 @@ footer div ul li a:hover {
 }
 .contenedor__guia:hover {
   background-color: rgb(177, 124, 241);
-  color: white;
+  color: whitesmoke;
 }
 
 .recetaimg {
@@ -286,7 +286,7 @@ footer div ul li a:hover {
 }
 .evento__video li:hover {
   background-color: rgb(177, 124, 241);
-  color: white;
+  color: whitesmoke;
 }
 
 .formulario__area {
@@ -333,7 +333,7 @@ footer div ul li a:hover {
 }
 #boton__inicio__estilo:hover {
   background-color: rgb(177, 124, 241);
-  color: white;
+  color: whitesmoke;
 }
 
 #productos__listado__grilla {
@@ -356,7 +356,7 @@ footer div ul li a:hover {
 }
 #productos__listado__grilla li:hover {
   background-color: rgb(177, 124, 241);
-  color: white;
+  color: whitesmoke;
 }
 
 #input__formulario__checkbox {

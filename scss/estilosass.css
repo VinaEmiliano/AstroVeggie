@@ -9,6 +9,8 @@ header {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   margin-bottom: 30px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   grid-area: header;
 }
@@ -122,6 +124,8 @@ footer {
   border-top-right-radius: 50%;
   grid-area: footer;
   padding: 1% 0px 0px 0px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 footer div {
@@ -237,6 +241,8 @@ footer div ul li a:hover {
   background-color: rgb(205, 172, 246);
   border-radius: 5px;
   padding: 20%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   text-align: center;
@@ -256,6 +262,8 @@ footer div ul li a:hover {
   background-color: rgb(205, 172, 246);
   border-radius: 10px;
   padding: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 80%;
   margin: 15px auto;
@@ -280,6 +288,8 @@ footer div ul li a:hover {
   background-color: rgb(205, 172, 246);
   border-radius: 10px;
   padding: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 80%;
   margin: 20px auto;
@@ -329,6 +339,8 @@ footer div ul li a:hover {
   padding: 5px;
   font-size: larger;
   margin: 20px 0px 0px 0px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #boton__inicio__estilo:hover {
@@ -366,7 +378,26 @@ footer div ul li a:hover {
 
 /* ANIMACIONES */
 .footer__animacion {
-  animation: visita 1.5s infinite;
+  -webkit-animation: visita 1.5s infinite;
+          animation: visita 1.5s infinite;
+}
+
+@-webkit-keyframes visita {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes visita {
@@ -395,9 +426,11 @@ footer div ul li a:hover {
   grid-template-rows: 2fr repeat(2, 4fr) 120px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 578px) {
   #grilla__inicio, #grilla__productos, #grilla__recetas, #grilla__eventos, #grilla__contacto {
     margin: auto;
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
     height: 100vh;
     display: grid;
@@ -473,83 +506,91 @@ footer div ul li a:hover {
     margin: 0px;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  #grilla__inicio, #grilla__productos, #grilla__recetas, #grilla__eventos, #grilla__contacto {
-    margin: auto;
-    width: 80%;
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "header" "aside" "section" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr repeat(2, 4fr) 2fr;
-  }
-  header {
-    width: 100%;
-  }
-  aside {
-    flex-direction: column;
-    padding: 0px 0px 20px 0px;
-    margin: 0px auto 20px auto;
-    height: auto;
-    width: 80%;
-    position: relative;
-  }
-  aside ul li {
-    background-color: rgb(205, 172, 246);
-    border-radius: 5px;
-    padding: 10px;
-    width: 80%;
-    text-align: center;
-    margin: 10px 0px;
-  }
-  nav {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-  footer {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  #imgtext {
-    width: 70%;
-    height: 70%;
-  }
-  #inicio__articulo__uno {
-    flex-direction: column;
-    align-items: center;
-  }
-  #proximoseventos, #eventosanteriores {
-    margin: 0px 0px;
-    padding: 0px 0px;
-  }
-  .productos__size {
-    padding: 15px 0px;
-  }
-  .evento__video li {
-    width: 90%;
-    margin: 20px auto;
-    padding: 10px;
-  }
-  .lista__indice li {
-    margin: 10px 0px;
-    width: 80%;
-  }
-  .recetaimg, .productos__listado__imagenes {
-    height: 100px;
-    width: 100px;
-  }
-  .contenedor__guia {
-    margin: 15px 0px;
-    width: auto;
-  }
-  .articulo__guia {
-    margin: 0px;
-  }
-}
-
-/*# sourceMappingURL=estilosass.css.map */
+/* @media (min-width: 320px) and (max-width: 768px){
+        #grilla__inicio, #grilla__productos, #grilla__recetas, #grilla__eventos, #grilla__contacto{
+        margin: auto;
+        width: min-content;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "section"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr repeat(2, 4fr) 2fr;
+    }
+    header{
+        width: 286px;
+    }
+    aside{
+        flex-direction: column;
+        padding: 0px 0px 20px 0px;
+        margin: 0px auto 20px auto;
+        height: auto;
+        width: 80%;
+        position: relative;
+        ul{
+            li{
+                background-color: $color-1-grupo-1;
+                border-radius: 5px;
+                padding: 10px;
+                width: 80%;
+                text-align: center;
+                margin: 10px 0px;
+            }
+        }
+    }
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        ul{
+            flex-direction: column;
+        }
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        width: 286px;
+    }
+    #imgtext{
+        width: 70%;
+        height: 70%;
+    }
+    #inicio__articulo__uno{
+        flex-direction: column;
+        align-items: center;
+    }
+    #proximoseventos, #eventosanteriores{
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    .productos__size{
+        padding: 15px 0px;
+    }
+    .evento__video{
+        li{
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+        }
+    }
+    .lista__indice{
+        li{
+            margin: 10px 0px;
+            width: 80%;
+        }
+    }
+    .recetaimg,.productos__listado__imagenes{
+        height: 100px;
+        width: 100px;
+    }
+    .contenedor__guia{
+        margin: 15px 0px;
+        width: auto;
+    }
+    .articulo__guia{
+        margin: 0px;
+    }
+} *//*# sourceMappingURL=estilosass.css.map */

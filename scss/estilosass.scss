@@ -490,3 +490,92 @@ footer{
         margin: 0px;
     }
 }
+
+@media (min-width: 320px) and (max-width: 768px){
+        #grilla__inicio, #grilla__productos, #grilla__recetas, #grilla__eventos, #grilla__contacto{
+        margin: auto;
+        width: 80%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "section"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr repeat(2, 4fr) 2fr;
+    }
+    header{
+        width: 100%;
+    }
+    aside{
+        flex-direction: column;
+        padding: 0px 0px 20px 0px;
+        margin: 0px auto 20px auto;
+        height: auto;
+        width: 80%;
+        position: relative;
+        ul{
+            li{
+                background-color: $color-1-grupo-1;
+                border-radius: 5px;
+                padding: 10px;
+                width: 80%;
+                text-align: center;
+                margin: 10px 0px;
+            }
+        }
+    }
+    nav{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        ul{
+            flex-direction: column;
+        }
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #imgtext{
+        width: 70%;
+        height: 70%;
+    }
+    #inicio__articulo__uno{
+        flex-direction: column;
+        align-items: center;
+    }
+    #proximoseventos, #eventosanteriores{
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    .productos__size{
+        padding: 15px 0px;
+    }
+    .evento__video{
+        li{
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+        }
+    }
+    .lista__indice{
+        li{
+            margin: 10px 0px;
+            width: 80%;
+        }
+    }
+    .recetaimg,.productos__listado__imagenes{
+        height: 100px;
+        width: 100px;
+    }
+    .contenedor__guia{
+        margin: 15px 0px;
+        width: auto;
+    }
+    .articulo__guia{
+        margin: 0px;
+    }
+}
